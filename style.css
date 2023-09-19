@@ -1,118 +1,107 @@
-body {
-  background-color: white;
-  font-family: 'Raleway', sans-serif;
+html {
+    font-size: 16px;
+    font-family: 'Arial', serif;
+  }
+  
+  body {
+    background-color: white;  
+    text-align: center;  
+  }
+  
+  h1 {
+    
+    padding: 50px;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+  
+  h2 {
+    padding: 40px 20px 0 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+  }
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: pi;
+    font-size: 14px;
+    font-weight: 900;
+}
+.header li {
+    display: inline-block;
+    padding: 10px;
 }
 
-.navigation ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+.header a {
+    color: pink;
+  }
+  
+  a.home {
+    color: papayawhip;
+  }
 
-.navigation li {
-  font-weight: 100;
-  letter-spacing: 2px;
-  padding: 20px;
-}
+  a.pagelink1 {
+    color: black;
+  }
 
-.navigation  li.logo {
-  color: black;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
+  .information {
+    padding-bottom: 40px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
+  }
 
-#banner {
-  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
-  background-size: cover;
-  background-position: bottom center;
-  height: 700px;
-  width: 100%;
-}
+  .information img {
+    display: block;
+    width: 1200px;
+    margin: 0px auto;
+    padding: 15px;
+  }
+  .me {
+    margin-top: 74px;
+    padding: 40px 0 100px 0;
+    background-color: peachpuff;
+  }
+  
+  .me p {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: black;
+    font-weight: lighter;
+    word-spacing: 0.25em;
+    line-height: 1.4;
+    font-family: 'GlegooBanner';
+    font-size: 20px;
+  }
 
-#banner .content h1 {
-  border: 3px solid white;
-  position: relative;
-  top: 70px;
-  width: 450px;
-  margin: 0 auto;
-}
+  .title {
+    padding: 10px 0 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+    color:rgb(0, 0, 0);
+  }
 
-#main {
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-  width: 400px;
-  height: 1000px;
-  overflow: scroll;
-}
-
-h1 {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
-  text-align: center;
-}
-
-h2 {
-  border: 1px dotted red;
-  color: red;
-  font-size: 14px;
-  line-height: 48px;
-  padding: 20px 30px;
-  margin: 30px 20px;
-  text-align: center;
-}
-
-h3 {
-  color: red;
-  font-size: 26px;
-  font-weight: 700;
-  padding: 20px 10px;
-}
-
-p {
-  color: grey;
-  font-size: 16px;
-  line-height: 48px;
-  margin-top: 60px;
-  padding: 10px 20px;
-}
-
-.pull-quote {
-  margin: 0 auto;
-  width: 400px;
-}
-
-.byline {
-  border-bottom: 1px solid LightGrey;
-  border-top: 1px solid LightGrey;
-  color: DarkGrey;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.share {
-  border: 1px solid LightGrey;
-  padding: 40px 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-.share a {
-  background: red;
-  border: 1px solid red;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.share a:hover {
-  background: white;
-  border: 1px solid red;
-  color: red;
-}
+  .first img {
+    display: block;
+    width: 100px;
+    margin: 0px auto;
+  }

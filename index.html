@@ -6,28 +6,42 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .first {
+            background: url('https://gifdb.com/images/high/monsters-in-the-dark-z9ygpkzauo1u1asy.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <nav class='header'>
         <ul>
             <li><a class='home' href='#top'><strong>HOME</strong></a></li>
-            <li><a class='pagelink1' href='#about me'><strong>ABOUT ME</strong></a></li>
-            <li><a class='pagelink' href='#web dev'><strong>Web Development</strong></a></li>
-            <li><a class='pagelink' href='#learn html'><strong>Learn HTML Activities</strong></a></li>
-            <li><a class='pagelink' href='#learn css'><strong>Learn CSS Activities</strong></a></li>
-            <li><a class='pagelink' href='financial.html'><strong>Financial Tracker</strong></a></li>
+            <li><a class='pagelink1' href='#about-me'><strong>ABOUT ME</strong></a></li>
+            <li><a class='pagelink' href='#web-dev'><strong>Web Development</strong></a></li>
+            <li class="dropdown-container">
+                <a class='pagelink' href='#learn-html'><strong>Learn HTML Activities</strong></a>
+                <ul class="dropdown">
+                    <li><a href='#'>Wine Festival</a></li>
+                    <li><a href='#'>Davies Burger</a></li>
+                    <li><a href='#'>Fashion Show</a></li>
+                </ul>
+            </li>
+            <li><a class='pagelink' href='#learn-css'><strong>Learn CSS Activities</strong></a></li>
+            <li><a class='pagelink' href='#ftracker'><strong>Financial Tracker</strong></a></li>
         </ul>
     </nav>
-    <div class="first">
-        <h1><strong>Welcome</strong> to my Portfolio</h1>
-        <img class="round-profile" src="Profile.jpg">
+    
+    <div class="first" id="top">
+        <h1><strong>Welcome</strong> to Zach's Portfolio</h1>
     </div>
+
     <div id="about me">
-        <div class="me">
+        <div class="information">
             <h2>About Me</h2>
             <p>
                 My name is Zachary B. Labor, and I am 19 years old.
-                I live in Mambago-A, Island Garden City Of Samal, Davao del Norte. 
+                I live in Mambago-A, Island Garden City Of Samal, Davao del Norte.
                 I graduated from Penaplata Elementary School Sped Center
                 during my elementary years. For junior high school, I completed my
                 education at Assumption Academy Of Penaplata Inc. Later, for my senior high school, I
@@ -38,7 +52,6 @@
             </p>
         </div>
     </div>
-
     <div id="web dev">
         <div class="information">
             <h2>Web Development</h2>
@@ -105,6 +118,43 @@
             <link rel="stylesheet" href="">
         </div>
     </div>
-   
+    <script>
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        
+        document.querySelector('a.home').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+       
+        document.querySelector('a.pagelink1').addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
 </body>
 </html>

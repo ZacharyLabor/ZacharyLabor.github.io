@@ -105,3 +105,9 @@ html {
     width: 100px;
     margin: 0px auto;
   }
+ .round-profile {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50px; 
+    object-fit: cover;
+  }
